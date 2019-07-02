@@ -1,36 +1,6 @@
 <!DOCTYPE html>
 <html>
 <body>
-    <div>
-        <a href="#my-menu" class="toggle-nav">Nav</a>
-        <div id='my-menu'>
-            <ul class="sf-menu">
-                <li>
-                    <a href="#">Item</a>
-                    <ul></ul>
-                </li>
-            </ul>
-        </div>
-    </div>
+    <div id="div1">div1</div>
 </body>
-<script>
-    var scr = {
-        "scripts": [
-            {"src": "./libs.min.js"},
-            {"src": "./script.js"}
-        ]
-    };
-    !function () {
-        "use strict";
-        window.onload = function () {
-            if ("[object Array]" !== Object.prototype.toString.call(scr.scripts)) return;
-            for (var r = 0; r < scr.scripts.length; r++) {
-                var c = document.createElement("script"), e = scr.scripts[r];
-                c.src = e.src;
-                c.async = false;
-                document.body.appendChild(c);
-            }
-        }
-    }();
-</script>
 </html>
